@@ -97,7 +97,7 @@ input string EA_Comment           = "NQ-8020";
 //  GLOBALS
 //-------------------------------------------------------------------
 double _point;      // instrument point size
-int    _tf_exec;    // execution timeframe (200-second custom or nearest)
+ENUM_TIMEFRAMES _tf_exec;  // execution timeframe (200-second custom or nearest)
 
 struct RepairLevel
 {
