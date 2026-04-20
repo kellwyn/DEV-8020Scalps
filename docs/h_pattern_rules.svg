@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="920" height="620" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="920" height="620" fill="#1a1a2e"/>
+
+  <!-- Title -->
+  <text x="460" y="36" text-anchor="middle" font-size="16" font-weight="bold" fill="#e0e0e0">H Pattern — Entry Rules (Short Continuation at 20/80 Level)</text>
+
+  <!-- ═══ CHART AREA ═══ -->
+  <rect x="80" y="55" width="490" height="490" fill="#0d1b2a" rx="5"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#162030" stroke-width="1">
+    <line x1="80"  y1="130" x2="570" y2="130"/>
+    <line x1="80"  y1="200" x2="570" y2="200"/>
+    <line x1="80"  y1="300" x2="570" y2="300"/>
+    <line x1="80"  y1="390" x2="570" y2="390"/>
+    <line x1="80"  y1="460" x2="570" y2="460"/>
+  </g>
+
+  <!-- 20/80 LEVEL LINE (gold dashed) -->
+  <line x1="80" y1="205" x2="570" y2="205" stroke="#ffd700" stroke-width="2" stroke-dasharray="9,5"/>
+  <rect x="80" y="192" width="80" height="16" fill="#1a1500"/>
+  <text x="120" y="204" text-anchor="middle" font-size="10" font-weight="bold" fill="#ffd700">20/80 Level</text>
+
+  <!-- ═══ SWING LOW ZONE shading (bars 4-5 region) ═══ -->
+  <rect x="83" y="310" width="145" height="183" fill="#1a2a18" rx="3" opacity="0.5"/>
+  <text x="155" y="505" text-anchor="middle" font-size="9" fill="#4a8040" font-style="italic">swing low zone (bars 4-5)</text>
+
+  <!-- ═══ BAR 5 — Context drop (bearish, grey) ═══ -->
+  <!-- H=88  O=108  C=265  L=280 -->
+  <g opacity="0.55">
+    <line x1="110" y1="88"  x2="110" y2="108" stroke="#7a8a9a" stroke-width="2"/>
+    <rect x="97"  y="108" width="26" height="157" fill="#5a6a7a" rx="1"/>
+    <line x1="110" y1="265" x2="110" y2="280" stroke="#7a8a9a" stroke-width="2"/>
+  </g>
+  <text x="110" y="565" text-anchor="middle" font-size="10" fill="#5a6a7a">Bar 5</text>
+
+  <!-- ═══ BAR 4 — Swing low (bearish, grey) ═══ -->
+  <!-- H=275  O=288  C=325  L=342  (all below 20/80 level y=205) -->
+  <g opacity="0.65">
+    <line x1="195" y1="275" x2="195" y2="288" stroke="#7a8a9a" stroke-width="2"/>
+    <rect x="182" y="288" width="26" height="37"  fill="#5a6a7a" rx="1"/>
+    <line x1="195" y1="325" x2="195" y2="342" stroke="#7a8a9a" stroke-width="2"/>
+  </g>
+  <text x="195" y="565" text-anchor="middle" font-size="10" fill="#5a6a7a">Bar 4</text>
+
+  <!-- lo_recent marker at y=342 -->
+  <line x1="83"  y1="342" x2="245" y2="342" stroke="#7a8a9a" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <text x="83" y="358" font-size="9" fill="#7a8a9a">lo_recent</text>
+
+  <!-- ═══ BAR 3 — Big bullish bounce ═══ -->
+  <!-- H=228  C=238(close=top)  O=338(open=bottom)  L=342 -->
+  <line x1="280" y1="228" x2="280" y2="238" stroke="#0f9b58" stroke-width="2.5"/>
+  <rect x="267" y="238" width="26" height="100" fill="#0f9b58" rx="1"/>
+  <line x1="280" y1="338" x2="280" y2="342" stroke="#0f9b58" stroke-width="2.5"/>
+  <text x="280" y="565" text-anchor="middle" font-size="10" fill="#0f9b58">Bar 3</text>
+
+  <!-- ═══ BAR 2 — Bounce peak at 20/80 level (bearish) ═══ -->
+  <!-- H=195  O=210  C=232  L=238  (hi2 = y=195, just above level y=205) -->
+  <line x1="365" y1="195" x2="365" y2="210" stroke="#e94560" stroke-width="2.5"/>
+  <rect x="352" y="210" width="26" height="22"  fill="#e94560" rx="1"/>
+  <line x1="365" y1="232" x2="365" y2="238" stroke="#e94560" stroke-width="2.5"/>
+  <text x="365" y="565" text-anchor="middle" font-size="10" fill="#e94560">Bar 2</text>
+
+  <!-- hi2 reference dashed line (y=195, extends rightward toward bar 1) -->
+  <line x1="350" y1="195" x2="480" y2="195" stroke="#ab47bc" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <text x="482" y="199" font-size="9" fill="#ab47bc">hi2</text>
+
+  <!-- ═══ BAR 1 — Rollover: lower high, bearish close ═══ -->
+  <!-- H=218  O=228  C=270  L=278 -->
+  <!-- hi1=218 < hi2=195 in price (y=218>y=195) → lower high ✓ -->
+  <line x1="450" y1="218" x2="450" y2="228" stroke="#e94560" stroke-width="2.5"/>
+  <rect x="437" y="228" width="26" height="42"  fill="#e94560" rx="1"/>
+  <line x1="450" y1="270" x2="450" y2="278" stroke="#e94560" stroke-width="2.5"/>
+  <text x="450" y="565" text-anchor="middle" font-size="10" fill="#e94560">Bar 1</text>
+
+  <!-- hi1 marker at y=218 -->
+  <line x1="437" y1="218" x2="495" y2="218" stroke="#ab47bc" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="498" y="222" font-size="9" fill="#ab47bc">hi1</text>
+
+  <!-- Gap arrow showing hi1 < hi2 (Rule B) -->
+  <line x1="488" y1="197" x2="488" y2="217" stroke="#ab47bc" stroke-width="1.5"/>
+  <polygon points="484,202 492,202 488,195" fill="#ab47bc"/>
+  <polygon points="484,214 492,214 488,220" fill="#ab47bc" opacity="0.6"/>
+
+  <!-- cl1 marker at y=270 (Rule C: cl1 < hi2) -->
+  <line x1="437" y1="270" x2="495" y2="270" stroke="#26c6da" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <text x="498" y="274" font-size="9" fill="#26c6da">cl1</text>
+
+  <!-- ═══ BOUNCE ANNOTATION (Rule A) ═══ -->
+  <!-- Double-headed arrow at x=87: from hi2 (y=195) to lo_recent (y=342) -->
+  <line x1="87" y1="195" x2="87" y2="342" stroke="#5b9bd5" stroke-width="1.5"/>
+  <line x1="84" y1="195" x2="95" y2="195" stroke="#5b9bd5" stroke-width="1.5"/>
+  <line x1="84" y1="342" x2="95" y2="342" stroke="#5b9bd5" stroke-width="1.5"/>
+  <polygon points="83,201 91,201 87,194" fill="#5b9bd5"/>
+  <polygon points="83,336 91,336 87,343" fill="#5b9bd5"/>
+  <!-- "Bounce" label rotated -->
+  <text x="75" y="275" text-anchor="middle" font-size="10" font-weight="bold" fill="#5b9bd5" transform="rotate(-90,75,275)">Bounce ≥ 8 pts</text>
+  <!-- leader line to Rule A box -->
+  <line x1="95" y1="268" x2="572" y2="180" stroke="#5b9bd5" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- ═══ ENTRY — Ask at 20/80 level → SHORT ═══ -->
+  <circle cx="522" cy="205" r="6" fill="#ffd700" stroke="#0d1b2a" stroke-width="1.5"/>
+  <text x="520" y="196" text-anchor="middle" font-size="9" fill="#ffd700">ask</text>
+  <!-- Down arrow for SHORT -->
+  <polygon points="514,213  530,213  522,230" fill="#e94560"/>
+  <text x="522" y="248" text-anchor="middle" font-size="12" font-weight="bold" fill="#e94560">SHORT</text>
+  <text x="522" y="263" text-anchor="middle" font-size="12" font-weight="bold" fill="#e94560">ENTRY</text>
+
+  <!-- Leader lines to right panel -->
+  <!-- Rule B (lower high): from gap arrow x=488, y=207 to panel -->
+  <line x1="498" y1="207" x2="572" y2="290" stroke="#ab47bc" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+  <!-- Rule C (cl1 < hi2): from cl1 marker to panel -->
+  <line x1="498" y1="270" x2="572" y2="375" stroke="#26c6da" stroke-width="1" stroke-dasharray="4,3" opacity="0.6"/>
+
+  <!-- ═══ RIGHT PANEL ═══ -->
+  <rect x="572" y="55" width="334" height="490" fill="#080f1e" rx="5"/>
+  <text x="739" y="74" text-anchor="middle" font-size="12" font-weight="bold" fill="#c0c0c0">ALL CONDITIONS MUST PASS</text>
+
+  <!-- PRE-CHECK -->
+  <rect x="580" y="80" width="318" height="44" fill="#1a1500" rx="4" stroke="#ffd700" stroke-width="1.2"/>
+  <circle cx="597" cy="102" r="10" fill="#ffd700"/>
+  <text x="597" y="107" text-anchor="middle" font-size="11" font-weight="bold" fill="#1a1500">&#10003;</text>
+  <text x="614" y="97"  font-size="11" font-weight="bold" fill="#ffd700">PRE-CHECK: Ask at xx20 or xx80 level</text>
+  <text x="614" y="112" font-size="10" fill="#a89020">Rules A–C only run when Is2080Level() = true</text>
+
+  <!-- RULE A: Bounce -->
+  <rect x="580" y="130" width="318" height="86" fill="#0a1830" rx="4" stroke="#5b9bd5" stroke-width="1.2"/>
+  <circle cx="597" cy="152" r="10" fill="#5b9bd5"/>
+  <text x="597" y="157" text-anchor="middle" font-size="12" font-weight="bold" fill="#0a1830">A</text>
+  <text x="614" y="148" font-size="12" font-weight="bold" fill="#5b9bd5">Bounce &#8805; HPattern_Bounce_Pts (8 pts)</text>
+  <text x="614" y="163" font-size="11" fill="#7090b0">max(hi2, hi3) &#8722; min(lo4, lo5)</text>
+  <text x="614" y="178" font-size="11" fill="#7090b0">The swing from the 2-bar low to the</text>
+  <text x="614" y="193" font-size="11" fill="#7090b0">2-bar high must be &#8805; 8 integer points</text>
+  <text x="614" y="208" font-size="10" fill="#5b9bd5">&#8594; Filters choppy/flat price — no real swing</text>
+
+  <!-- RULE B: Lower high -->
+  <rect x="580" y="224" width="318" height="75" fill="#130820" rx="4" stroke="#ab47bc" stroke-width="1.2"/>
+  <circle cx="597" cy="244" r="10" fill="#ab47bc"/>
+  <text x="597" y="249" text-anchor="middle" font-size="12" font-weight="bold" fill="#130820">B</text>
+  <text x="614" y="240" font-size="12" font-weight="bold" fill="#ab47bc">hi1 &lt; hi2 — Lower High (rollover)</text>
+  <text x="614" y="255" font-size="11" fill="#8850a0">Bar 1 must NOT exceed Bar 2's high</text>
+  <text x="614" y="270" font-size="11" fill="#8850a0">The bounce has peaked; sellers stepping in</text>
+  <text x="614" y="289" font-size="10" fill="#ab47bc">&#8594; Lower high = trend continuation short</text>
+
+  <!-- RULE C: Close below hi2 -->
+  <rect x="580" y="307" width="318" height="75" fill="#001820" rx="4" stroke="#26c6da" stroke-width="1.2"/>
+  <circle cx="597" cy="327" r="10" fill="#26c6da"/>
+  <text x="597" y="332" text-anchor="middle" font-size="12" font-weight="bold" fill="#001820">C</text>
+  <text x="614" y="323" font-size="12" font-weight="bold" fill="#26c6da">cl1 &lt; hi2 — Close not recovering</text>
+  <text x="614" y="338" font-size="11" fill="#4090a0">Bar 1 close must stay below Bar 2's high</text>
+  <text x="614" y="353" font-size="11" fill="#4090a0">If bar 1 closed above hi2, bulls retook it</text>
+  <text x="614" y="372" font-size="10" fill="#26c6da">&#8594; Confirms no recovery — bears in control</text>
+
+  <!-- PATTERN SENSITIVITY note -->
+  <rect x="580" y="390" width="318" height="86" fill="#0d0d0d" rx="4" stroke="#666666" stroke-width="1"/>
+  <text x="739" y="408" text-anchor="middle" font-size="11" font-weight="bold" fill="#aaaaaa">HPattern_Bounce_Pts — Sensitivity</text>
+  <text x="588" y="424" font-size="10" fill="#888888">Low  (3 pts)  &#160;&#160; Accepts tiny wiggles &#8594; more signals, noisier</text>
+  <text x="588" y="438" font-size="10" fill="#aaaaaa">Default (8 pts) Requires a real swing &#8594; balanced</text>
+  <text x="588" y="452" font-size="10" fill="#888888">High (20 pts) &#160; Only deep pullbacks &#8594; fewer, cleaner</text>
+  <text x="588" y="468" font-size="10" fill="#555555">No upper limit — bounce spans multiple bars</text>
+
+  <!-- RESULT -->
+  <rect x="580" y="484" width="318" height="52" fill="#200000" rx="4" stroke="#e94560" stroke-width="1.5"/>
+  <text x="739" y="506" text-anchor="middle" font-size="13" font-weight="bold" fill="#e94560">&#10003; ALL PASS &#8594; EXECUTE SHORT</text>
+  <text x="739" y="524" text-anchor="middle" font-size="11" fill="#c04050">Entry = bid &#160;&#160; SL = bid + 10 pts &#160;&#160; TP1 = bid &#8722; 15 pts</text>
+
+  <!-- Bottom note -->
+  <text x="320" y="600" text-anchor="middle" font-size="9.5" fill="#3a5070">
+    Bar indices: 1=last closed, 2=previous, 3/4/5=older. lo_recent uses bars 4 &amp; 5. Bounce high uses bars 2 &amp; 3.
+  </text>
+
+</svg>
