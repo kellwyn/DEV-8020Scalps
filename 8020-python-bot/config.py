@@ -1,16 +1,31 @@
 """
 Bot configuration – mirrors EA input parameters.
 Edit this file to toggle setups and adjust risk without changing core logic.
+
+Credentials are read from Windows Credential Manager via keyring.
+Store once:
+  python -c "import keyring; keyring.set_password('mt5', '8020_login',    'YOUR_ACCOUNT')"
+  python -c "import keyring; keyring.set_password('mt5', '8020_password', 'YOUR_PASSWORD')"
+  python -c "import keyring; keyring.set_password('mt5', '8020_server',   'YOUR_SERVER')"
+
+Non-sensitive overrides can also be set in a .env file (see .env.example).
 """
 
+import os
+import keyring
 import MetaTrader5 as mt5
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # ---------------------------------------------------------------------------
-# MT5 Connection
+# MT5 Connection — credentials from keyring, never hardcoded
 # ---------------------------------------------------------------------------
-MT5_LOGIN    = 0           # replace with your account number
-MT5_PASSWORD = ""          # replace with your password
-MT5_SERVER   = ""          # replace with broker server name
+_profile     = os.getenv("KEYRING_PROFILE", "8020")
+MT5_LOGIN    = int(keyring.get_password("mt5", f"{_profile}_login")    or os.getenv("MT5_LOGIN",    "0"))
+MT5_PASSWORD =     keyring.get_password("mt5", f"{_profile}_password") or os.getenv("MT5_PASSWORD", "")
+MT5_SERVER   =     keyring.get_password("mt5", f"{_profile}_server")   or os.getenv("MT5_SERVER",   "")
+MT5_PATH     = os.getenv("MT5_PATH", "")
 
 # ---------------------------------------------------------------------------
 # Instrument

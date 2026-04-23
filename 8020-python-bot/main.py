@@ -34,9 +34,10 @@ log = logging.getLogger("8020-bot")
 def main():
     log.info("NQ 8020 Scalps Bot v1.0.0 starting...")
 
-    if not mt5.initialize(login=config.MT5_LOGIN,
-                          password=config.MT5_PASSWORD,
-                          server=config.MT5_SERVER):
+    kwargs = dict(login=config.MT5_LOGIN, password=config.MT5_PASSWORD, server=config.MT5_SERVER)
+    if config.MT5_PATH:
+        kwargs["path"] = config.MT5_PATH
+    if not mt5.initialize(**kwargs):
         log.error("MT5 init failed: %s", mt5.last_error())
         return
 
